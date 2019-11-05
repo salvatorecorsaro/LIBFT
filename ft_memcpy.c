@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
+/*   By: scorsaro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/05 16:47:27 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/05 19:27:23 by scorsaro         ###   ########.fr       */
+/*   Created: 2019/11/05 17:40:12 by scorsaro          #+#    #+#             */
+/*   Updated: 2019/11/05 17:41:41 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-
-void	*ft_memset(void *b, int c, size_t len)
+void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
 {
-	char		*dest;
-	size_t		i;
+	char			*dest;
+	const char		*srce;
+	size_t			i;
 
-	dest = b;
+	dest = dst;
+	srce = src;
 	i = -1;
-	if (b && len)
-		while (++i < len)
-			dest[i] = c;
-	return (b);
+	if (dest && srce && n)
+		while (++i < n)
+			dest[i] = srce[i];
+	return (dst);
 }
