@@ -6,7 +6,7 @@
 /*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/06 11:38:39 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/06 11:54:59 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/07 19:49:45 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,3 +43,16 @@ int		main(void)
 	strcpy(srce, "hello world");
 	return (0);
 }
+
+/*
+int main() 
+{ 
+   char csrc[100] = "Geeksfor"; 
+   memmove(csrc+5, csrc, strlen(csrc)+1); 
+   printf("%s", csrc); 
+
+   char csrc2[100] = "Geeksfor"; 
+   ft_memmove(csrc2+5, csrc2, strlen(csrc2)+1); 
+   printf("%s", csrc2);
+   return 0; 
+} */
