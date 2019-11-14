@@ -1,26 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_printable.c                              :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: scorsaro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/08 17:51:58 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/10/08 22:31:43 by scorsaro         ###   ########.fr       */
+/*   Created: 2019/10/16 11:43:02 by scorsaro          #+#    #+#             */
+/*   Updated: 2019/10/20 18:23:50 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_printable(char *str)
-{
-	int i;
+#include <stdlib.h>
 
+char	*ft_strdup(char *src)
+{
+	int			s;
+	int			i;
+	char		*stored;
+
+	s = 0;
 	i = 0;
-	while (str[i] != '\0')
+	while (src[s] != '\0')
+		s++;
+	stored = (char *)malloc((s + 1) * (sizeof(char)));
+	while (src[i] != '\0')
 	{
-		if (str[i] >= 32 && str[i] <= 126)
-			i++;
-		else
-			return (0);
+		stored[i] = src[i];
+		i++;
 	}
-	return (1);
+	stored[i] = '\0';
+	return (stored);
 }

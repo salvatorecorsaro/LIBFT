@@ -1,26 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: scorsaro <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/08 17:51:01 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/10/08 22:21:04 by scorsaro         ###   ########.fr       */
+/*   Created: 2019/11/14 18:40:20 by scorsaro          #+#    #+#             */
+/*   Updated: 2019/11/14 18:40:36 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_numeric(char *str)
+int		ft_isalpha(int c)
 {
-	int i;
-
-	i = 0;
-	while (str[i] != '\0')
+	if (c)
 	{
-		if (str[i] >= '0' && str[i] <= '9')
-			i++;
+		if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+			return (-1);
 		else
 			return (0);
 	}
-	return (1);
+	else
+		return (1);
 }

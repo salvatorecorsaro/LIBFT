@@ -1,25 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strupcase.c                                     :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: scorsaro <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/08 17:52:19 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/10/10 15:31:31 by scorsaro         ###   ########.fr       */
+/*   Created: 2019/11/14 18:46:30 by scorsaro          #+#    #+#             */
+/*   Updated: 2019/11/14 18:48:37 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strupcase(char *str)
+int		ft_toupper(int c)
 {
-	int i;
-
-	i = 0;
-	while (str[i] >= '\0')
-	{
-		if (str[i] >= 'a' && str[i] <= 'z')
-			str[i] = str[i] - 32;
-		i++;
-	}
-	return (str);
+	if (c >= 'a' && c <= 'z')
+		return (c + 32);
+	else
+		return (c);
 }

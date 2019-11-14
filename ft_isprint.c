@@ -1,25 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: scorsaro <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/08 22:33:10 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/10/08 22:33:20 by scorsaro         ###   ########.fr       */
+/*   Created: 2019/11/14 18:43:01 by scorsaro          #+#    #+#             */
+/*   Updated: 2019/11/14 18:45:34 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strlowcase(char *str)
+int		ft_isprint(int c)
 {
-	int i;
-
-	i = 0;
-	while (str[i] != '\0')
+	if (c)
 	{
-		if (str[i] >= 'A' && str[i] <= 'Z')
-			str[i] += 32;
-		i++;
+		if (c >= 32 && c <= 126)
+			return (-1);
+		else
+			return (0);
 	}
-	return (str);
+	else
+		return (1);
 }

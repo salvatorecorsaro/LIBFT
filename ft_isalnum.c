@@ -1,28 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: scorsaro <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/08 20:52:57 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/10/08 22:28:41 by scorsaro         ###   ########.fr       */
+/*   Created: 2019/11/14 18:37:21 by scorsaro          #+#    #+#             */
+/*   Updated: 2019/11/14 18:38:16 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_alpha(char *str)
+int		isalnum(int c)
 {
-	int i;
-
-	i = 0;
-	while (str[i] != '\0')
+	if (c)
 	{
-		if (str[i] >= 'A' && str[i] <= 'Z')
-			i++;
-		else if (str[i] >= 'a' && str[i] <= 'z')
-			i++;
+		if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') ||
+		(c >= '0' && c <= '9'))
+			return (-1);
 		else
 			return (0);
 	}
-	return (1);
+	else
+		return (1);
 }
