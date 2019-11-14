@@ -1,27 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/14 16:51:58 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/14 17:24:40 by scorsaro         ###   ########.fr       */
+/*   Created: 2019/11/14 17:52:04 by scorsaro          #+#    #+#             */
+/*   Updated: 2019/11/14 18:10:47 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char    *ft_strchr(const char *s, int c)
+#include <stddef.h>
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-    int          i;
-    int         end;
+	int i;
+	int a;
 
-    i = -1;
-    end = ft_strlen(s);
-    if (s && c == '\0')
-			return ((char *)&s[end]);
-    if (s && c)
-	    while (s[++i])
-            if (s[i] == c)
-                return (s + i);
-    return (0);
+	i = 0;
+	if (needle[0] == '\0')
+		return ((char *)haystack);
+	while (haystack[i] != '\0' && i < len)
+	{
+		a = 0;
+		while (haystack[i + a] != '\0' && haystack[i + a] == needle[a])
+		{
+			if (needle[a + 1] == '\0')
+				return ((char *)&haystack[i]);
+			a++;
+		}
+		i++;
+	}
+	return (0);
 }
