@@ -6,11 +6,11 @@
 #    By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/15 18:16:55 by scorsaro          #+#    #+#              #
-#    Updated: 2019/11/15 18:32:25 by scorsaro         ###   ########.fr        #
+#    Updated: 2019/11/15 18:38:29 by scorsaro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME=libft.a
+
 
 SRC=	ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c
 		ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c
@@ -22,6 +22,8 @@ SRC=	ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c
 
 
 OBJS	= ${SRCS:.c=.o}
+
+NAME=libft.a
 
 CC=gcc
 
