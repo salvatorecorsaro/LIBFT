@@ -6,11 +6,11 @@
 /*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/05 18:08:31 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/06 11:46:56 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/20 16:12:43 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_memccpy(void *restrict dst,
 const void *restrict src, int c, size_t n)

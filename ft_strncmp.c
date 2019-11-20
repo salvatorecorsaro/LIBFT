@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: scorsaro <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/10 12:37:49 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/10/15 20:22:08 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/20 16:21:05 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 unsigned int			lenght_str(char *str, unsigned int n)
 {

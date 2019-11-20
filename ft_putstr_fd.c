@@ -1,11 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/11/20 16:18:06 by scorsaro          #+#    #+#             */
+/*   Updated: 2019/11/20 16:18:35 by scorsaro         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-void ft_putstr_fd(char *s, int fd)
+void	ft_putstr_fd(char *s, int fd)
 {
-    int i;
+	int i;
 
-    i = -1;
-    if (s)
-        while (s[++i])
-            ft_putchar_fd(s[i], fd);
+	i = -1;
+	if (s)
+		while (s[++i])
+			ft_putchar_fd(s[i], fd);
 }

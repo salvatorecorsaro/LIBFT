@@ -1,25 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/20 16:10:12 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/20 16:10:41 by scorsaro         ###   ########.fr       */
+/*   Created: 2019/11/20 16:00:24 by scorsaro          #+#    #+#             */
+/*   Updated: 2019/11/20 16:18:56 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+char		*ft_strcat(char *dest, char *src)
 {
-	char		*dest;
-	size_t		i;
+	int			i;
+	int			a;
 
-	dest = s;
-	i = -1;
-	if (s && n)
-		while (++i < n)
-			dest[i] = 0;
+	a = 0;
+	i = 0;
+	while (dest[a] != '\0')
+		a++;
+	while (src[i] != '\0')
+	{
+		dest[a + i] = src[i];
+		i++;
+	}
+	dest[a + i] = '\0';
+	return (dest);
 }

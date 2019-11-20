@@ -1,3 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/11/20 16:04:14 by scorsaro          #+#    #+#             */
+/*   Updated: 2019/11/20 16:18:47 by scorsaro         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
 unsigned int	countword(const char *s, char sep)
 {
 	int				i;
@@ -13,34 +27,6 @@ unsigned int	countword(const char *s, char sep)
 	}
 	return (counter);
 }
-
-
-
-char *ft_substr(char const *s, unsigned int start,
-size_t len)
-{
-	char	*ptr;
-	size_t	i;
-
-	i = 0;
-	ptr = NULL;
-	if (s != NULL)
-	{
-		ptr = malloc((len + 1) * sizeof(char));
-		if (ptr == NULL)
-			return (NULL);
-		ptr[len] = '\0';
-		while (i < len + start)
-		{
-			if (i >= start)
-				ptr[i - start] = s[i];
-			i++;
-		}
-		return (ptr);
-	}
-	return (NULL);
-}
-
 
 char			**ft_split(char const *s, char c)
 {

@@ -6,9 +6,11 @@
 /*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/14 18:41:45 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/14 18:41:50 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/20 16:12:24 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int		ft_isdigit(int c)
 {

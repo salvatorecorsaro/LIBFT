@@ -6,12 +6,11 @@
 /*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/15 18:42:58 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/15 19:44:03 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/20 16:06:51 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
-#include<stdlib.h>
+#include "libft.h"
 
 static void			lengths(int n, size_t *len, int *weight)
 {
@@ -55,9 +54,4 @@ char				*ft_itoa(int n)
 	}
 	str[cur] = '\0';
 	return (str);
-}
-
-int main()
-{
-    printf("%s\n", ft_itoa(-1988));
 }

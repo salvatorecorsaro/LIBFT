@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: scorsaro <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/16 16:28:02 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/10/24 15:55:22 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/20 16:02:26 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 int			ft_strlen(char *str)
 {
@@ -20,24 +20,6 @@ int			ft_strlen(char *str)
 	while (str[i] != '\0')
 		i++;
 	return (i);
-}
-
-char		*ft_strcat(char *dest, char *src)
-{
-	int			i;
-	int			a;
-
-	a = 0;
-	i = 0;
-	while (dest[a] != '\0')
-		a++;
-	while (src[i] != '\0')
-	{
-		dest[a + i] = src[i];
-		i++;
-	}
-	dest[a + i] = '\0';
-	return (dest);
 }
 
 int			big_len_count(int size, char **strs, char *sep)

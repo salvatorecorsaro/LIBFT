@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: scorsaro <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/08 17:53:52 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/10/11 08:12:24 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/20 16:20:48 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {

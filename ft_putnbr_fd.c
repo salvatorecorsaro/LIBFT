@@ -1,6 +1,18 @@
-#include"libft.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/11/20 16:17:31 by scorsaro          #+#    #+#             */
+/*   Updated: 2019/11/20 16:17:47 by scorsaro         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void    ft_putnbr_fd(int n, int fd)
+#include "libft.h"
+
+void	ft_putnbr_fd(int n, int fd)
 {
 	long int lnb;
 

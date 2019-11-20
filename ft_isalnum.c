@@ -6,9 +6,11 @@
 /*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/14 18:37:21 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/14 18:38:16 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/20 16:11:29 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int		isalnum(int c)
 {

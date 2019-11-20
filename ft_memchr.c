@@ -1,33 +1,29 @@
-#include <stddef.h>
-#include <stdio.h>
-#include <string.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/11/20 16:12:57 by scorsaro          #+#    #+#             */
+/*   Updated: 2019/11/20 16:14:26 by scorsaro         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void    *ft_memchr(const void *str, int c, size_t n)
+#include "libft.h"
+
+void	*ft_memchr(const void *str, int c, size_t n)
 {
-    char            *stri;
-    unsigned int    to_find;
-    size_t          i;
+	char			*stri;
+	unsigned int	to_find;
+	size_t			i;
 
-    stri = str;
-    to_find = (unsigned int) c;
-    i = -1;
-    if (stri && to_find && n)
-        while (++i < n)
-            if (stri[i] == to_find)
-                return (stri + i);
-    return (0);
-}
-
-
-
-int main () {
-   const char str[] = "http://www.tutorialspoint.com";
-   const char ch = '.';
-   char *ret;
-
-   ret = ft_memchr(str, ch, strlen(str));
-
-   printf("String after |%c| is - |%s|\n", ch, ret);
-
-   return(0);
+	stri = str;
+	to_find = (unsigned int)c;
+	i = -1;
+	if (stri && to_find && n)
+		while (++i < n)
+			if (stri[i] == to_find)
+				return (stri + i);
+	return (0);
 }
