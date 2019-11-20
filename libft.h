@@ -6,7 +6,7 @@
 /*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/20 15:36:15 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/20 16:23:58 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/20 17:43:31 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char			*ft_strchr(const char *s, int c);
 char			*ft_strnstr(const char *haystack, const char *needle,
 size_t len);
 int				ft_strncmp(char *s1, char *s2, unsigned int n);
-int				ft_atoi(char const *str);
+int				ft_atoi(char const *str);/*hay algo que no funciona*/
 int				ft_isalpha(int c);
 int				ft_isdigit(int c);
 int				isalnum(int c);
@@ -50,6 +50,10 @@ char			*ft_strtrim(char const *s1, char const *set); //hay que completarla
 char			**ft_split(char const *s, char c);
 char			*ft_itoa(int n);
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void			ft_putchar_fd(char c, int fd);
+void			ft_putstr_fd(char *s, int fd);
+void			ft_putendl_fd(char *s, int fd);
+void			ft_putnbr_fd(int n, int fd);
 
 
 char			*ft_strcat(char *dest, char *src);

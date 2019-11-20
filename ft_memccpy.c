@@ -6,7 +6,7 @@
 /*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/05 18:08:31 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/20 16:12:43 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/20 17:24:51 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,10 @@ void	*ft_memccpy(void *restrict dst,
 const void *restrict src, int c, size_t n)
 {
 	char	*dest;
-	char	*srce;
+	const char	*srce;
 	size_t	i;
+	void	*ret;
+
 
 	dest = dst;
 	srce = src;
@@ -27,7 +29,10 @@ const void *restrict src, int c, size_t n)
 		while (++i < n && srce[i] != c)
 			dest[i] = srce[i];
 		if (srce[i] == c)
-			return (srce[i + 1]);
+		{
+			ret = dest + i + 1;
+			return (ret);
+		}
 	}
 	return (0);
 }
