@@ -6,9 +6,11 @@
 /*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/14 18:27:24 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/14 18:28:36 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/20 16:25:16 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(char const *str)
 {
