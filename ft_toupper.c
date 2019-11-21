@@ -6,7 +6,7 @@
 /*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/14 18:46:30 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/20 16:23:24 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/21 18:06:29 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 int		ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
-		return (c + 32);
-	else
-		return (c);
+		c -= 32;
+	return (c);
 }

@@ -6,7 +6,7 @@
 /*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 19:03:46 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/20 17:26:30 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/21 16:30:56 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,15 +23,12 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	srce = (char *)src;
 	aux = len - 1;
 	i = -1;
-	if (src && len)
+	if (&dest > &srce)
 	{
-		if (&dest > &srce)
+		while (++i < len)
 		{
-			while (++i < len)
-			{
-				dest[aux] = srce[aux];
-				aux--;
-			}
+			dest[aux] = srce[aux];
+			aux--;
 		}
 		while (++i < len)
 			dest[i] = srce[i];

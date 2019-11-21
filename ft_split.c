@@ -6,7 +6,7 @@
 /*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/20 16:04:14 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/21 12:17:50 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/21 18:21:31 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,8 @@ char			**ft_split(char const *s, char c)
 	size_t		j;
 	size_t		len;
 
-	if (!s || !c)
+	if (!s || !c || !(ret = malloc((countword(s, c) + 1) * (sizeof(char *)))))
 		return (0);
-	ret = malloc((countword(s, c) + 1) * (sizeof(char *)));
 	i = 0;
 	j = 0;
 	while (s[i])

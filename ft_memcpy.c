@@ -6,7 +6,7 @@
 /*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/05 17:40:12 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/21 12:12:08 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/21 16:27:14 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	dest = dst;
 	srce = src;
 	i = -1;
-	if (dest && srce && n)
-		while (++i < n)
-			dest[i] = srce[i];
+	while (++i < n)
+		dest[i] = srce[i];
 	return (dst);
 }

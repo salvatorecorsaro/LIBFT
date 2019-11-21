@@ -6,7 +6,7 @@
 /*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/20 16:16:35 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/20 16:17:02 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/21 18:17:08 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,5 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	if (c)
-		write(fd, &c, 1);
+	write(fd, &c, 1);
 }

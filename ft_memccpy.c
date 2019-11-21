@@ -6,7 +6,7 @@
 /*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/05 18:08:31 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/21 12:11:48 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/21 16:28:26 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ const void *src, int c, size_t n)
 	dest = dst;
 	srce = src;
 	i = -1;
-	if (dest && srce && c && n)
+	if (c && n)
 	{
 		while (++i < n && srce[i] != c)
 			dest[i] = srce[i];

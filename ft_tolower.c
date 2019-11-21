@@ -6,7 +6,7 @@
 /*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/14 18:48:54 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/20 16:23:18 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/21 18:07:07 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 int		ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
-		return (c - 32);
-	else
-		return (c);
+		c += 32;
+	return (c);
 }

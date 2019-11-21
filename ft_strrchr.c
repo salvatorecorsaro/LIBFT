@@ -6,7 +6,7 @@
 /*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/21 11:48:00 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/21 11:50:21 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/21 18:15:44 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strrchr(const char *s, int c)
 {
 	int		i;
 
-	i = ft_strlen(s);
+	i = ft_strlen((char *)s);
 	if (s && c)
 		while (i >= 0)
 		{
