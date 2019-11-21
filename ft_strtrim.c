@@ -6,13 +6,13 @@
 /*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/20 16:21:42 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/21 11:33:00 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/21 12:15:19 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		start_set_finder(char const *s1, char const *set)
+static int		start_set_finder(char const *s1, char const *set)
 {
 	int i;
 	int counter;
@@ -26,7 +26,7 @@ int		start_set_finder(char const *s1, char const *set)
 	return (counter);
 }
 
-int		end_set_finder(char const *s1, char const *set)
+static int		end_set_finder(char const *s1, char const *set)
 {
 	int i;
 	int counter;

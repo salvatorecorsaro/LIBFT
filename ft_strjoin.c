@@ -6,23 +6,13 @@
 /*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/16 16:28:02 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/20 16:02:26 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/21 12:13:48 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int			ft_strlen(char *str)
-{
-	int			i;
-
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
-
-int			big_len_count(int size, char **strs, char *sep)
+static int			big_len_count(int size, char **strs, char *sep)
 {
 	int			big_counter;
 	int			sep_counter;
