@@ -6,7 +6,7 @@
 /*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/20 15:36:15 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/20 17:43:31 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/21 11:50:43 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,11 @@ int				ft_strlen(char *str);
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size);
 char			*ft_strchr(const char *s, int c);
-/* falta ft_strrchr */
+char			*ft_strrchr(const char *s, int c);
 char			*ft_strnstr(const char *haystack, const char *needle,
 size_t len);
 int				ft_strncmp(char *s1, char *s2, unsigned int n);
-int				ft_atoi(char const *str);/*hay algo que no funciona*/
+int				ft_atoi(char const *str);
 int				ft_isalpha(int c);
 int				ft_isdigit(int c);
 int				isalnum(int c);
@@ -46,7 +46,7 @@ char			*ft_strdup(char *src);
 char			*ft_substr(char const *s, unsigned int start,
 size_t len);
 char			*ft_strjoin(int size, char **strs, char *sep);
-char			*ft_strtrim(char const *s1, char const *set); //hay que completarla
+char			*ft_strtrim(char const *s1, char const *set);
 char			**ft_split(char const *s, char c);
 char			*ft_itoa(int n);
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
