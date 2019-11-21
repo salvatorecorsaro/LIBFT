@@ -6,7 +6,7 @@
 /*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/20 15:36:15 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/21 12:17:52 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/21 12:19:23 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,5 +57,11 @@ void			ft_putnbr_fd(int n, int fd);
 
 
 char			*ft_strcat(char *dest, char *src);
+
+typedef struct s_list
+{
+void *content;
+struct s_list *next;
+} t_list;
 
 #endif
