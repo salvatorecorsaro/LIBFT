@@ -6,7 +6,7 @@
 /*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/16 11:43:02 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/20 15:56:37 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/22 11:56:09 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,8 @@ char	*ft_strdup(char *src)
 	i = 0;
 	while (src[s] != '\0')
 		s++;
-	stored = (char *)malloc((s + 1) * (sizeof(char)));
+	if (!(stored = (char *)malloc((s + 1) * (sizeof(char)))))
+		return (0);
 	while (src[i] != '\0')
 	{
 		stored[i] = src[i];

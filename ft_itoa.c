@@ -6,7 +6,7 @@
 /*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/15 18:42:58 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/20 16:06:51 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/22 15:32:26 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ char				*ft_itoa(int n)
 	char		*str;
 
 	lengths(n, &len, &weight);
-	str = (char *)malloc(sizeof(*str) * (len + 1));
+	str = (char *)malloc(sizeof(*str) * (len + 2));
 	if (str == NULL)
 		return (NULL);
 	cur = 0;
