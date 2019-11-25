@@ -6,13 +6,13 @@
 /*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/16 11:43:02 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/22 11:56:09 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/25 16:06:06 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(char *src)
+char	*ft_strdup(const char *src)
 {
 	int			s;
 	int			i;

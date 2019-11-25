@@ -6,7 +6,7 @@
 /*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/08 17:53:52 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/22 13:30:09 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/25 16:03:18 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,12 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	if (!dst || !src)
 		return (0);
 	if (size == 0)
-		return (ft_strlen((char *)src));
+		return (ft_strlen(src));
 	while (src[i] && i < (size - 1))
 	{
 		dst[i] = src[i];
 		i++;
 	}
 	dst[i] = '\0';
-	return (ft_strlen((char *)src));
+	return (ft_strlen(src));
 }
