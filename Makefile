@@ -6,7 +6,7 @@
 #    By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/15 18:16:55 by scorsaro          #+#    #+#              #
-#    Updated: 2019/11/25 12:55:53 by scorsaro         ###   ########.fr        #
+#    Updated: 2019/11/25 17:17:13 by scorsaro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ SRCS	= ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c \
 			ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c \
 			ft_strjoin.c ft_split.c ft_itoa.c ft_strmapi.c \
 			ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c \
-			ft_strcat.c libft.h ft_strtrim.c ft_strrchr.c ft_strncpy.c ft_strcpy.c
+			ft_strcat.c ft_strtrim.c ft_strrchr.c ft_strncpy.c ft_strcpy.c
 
 
 
