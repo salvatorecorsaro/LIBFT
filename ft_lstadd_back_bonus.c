@@ -6,7 +6,7 @@
 /*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/21 13:45:02 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/22 17:43:18 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/25 12:12:32 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,15 @@ void	ft_lstadd_back(t_list **alst, t_list *new)
 {
 	t_list	*aux;
 
-	if (*alst && new)
+	if (alst == NULL)
+		return ;
+	aux = *alst;
+	if (*alst == NULL)
+		*alst = new;
+	else
 	{
-		aux = ft_lstlast(*alst);
+		while (aux->next)
+			aux = aux->next;
 		aux->next = new;
 	}
 }

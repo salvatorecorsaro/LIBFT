@@ -6,18 +6,20 @@
 /*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/22 16:32:00 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/22 16:32:01 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/25 11:56:24 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstclear(t_list **lst, void (*del)(void
+void	ft_lstclear(t_list **lst, void (*del)(void
 *))
 {
-	if(*lst)
-	{
-		ft_lstdelone((ft_lstlast(*lst)),del);
-		ft_lstclear(*lst, del);
-		ft_lstdelone(*lst, del);
+	if (!lst || !del)
+		return ;
+	if (!(*lst))
+		return ;
+	ft_lstclear(&((*lst)->next), del);
+	ft_lstdelone(*lst, del);
+	*lst = NULL;
 }

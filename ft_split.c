@@ -6,13 +6,13 @@
 /*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/20 16:04:14 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/21 18:21:31 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/25 12:48:02 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static unsigned int	countword(const char *s, char sep)
+static unsigned int		countword(const char *s, char sep)
 {
 	int				i;
 	unsigned int	counter;
@@ -28,7 +28,7 @@ static unsigned int	countword(const char *s, char sep)
 	return (counter);
 }
 
-char			**ft_split(char const *s, char c)
+char					**ft_split(char const *s, char c)
 {
 	char		**ret;
 	size_t		i;

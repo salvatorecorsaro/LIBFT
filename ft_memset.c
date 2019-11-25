@@ -6,7 +6,7 @@
 /*   By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/05 16:47:27 by scorsaro          #+#    #+#             */
-/*   Updated: 2019/11/21 16:25:03 by scorsaro         ###   ########.fr       */
+/*   Updated: 2019/11/25 12:28:50 by scorsaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ void	*ft_memset(void *b, int c, size_t len)
 
 	dest = b;
 	i = -1;
-
 	while (++i < len)
 		dest[i] = c;
 	return (b);

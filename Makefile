@@ -6,7 +6,7 @@
 #    By: scorsaro <scorsaro@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/15 18:16:55 by scorsaro          #+#    #+#              #
-#    Updated: 2019/11/22 17:12:54 by scorsaro         ###   ########.fr        #
+#    Updated: 2019/11/25 12:55:53 by scorsaro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,10 @@ BONUS = ft_lstadd_back_bonus.c \
 		ft_lstdelone_bonus.c \
 		ft_lstlast_bonus.c \
 		ft_lstnew_bonus.c \
-		ft_lstsize_bonus.c
+		ft_lstsize_bonus.c \
+		ft_lstclear_bonus.c \
+		ft_lstiter_bonus.c \
+		ft_lstmap_bonus.c
 
 
 
